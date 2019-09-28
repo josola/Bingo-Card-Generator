@@ -9,10 +9,10 @@
 int main() {
 
 	std::ofstream outFile;
-	outFile.open("randomNumbers.csv");
+	outFile.open("bingo-numbers.csv");
 
 	std::vector<int> a(15), b(15), c(15), d(15), e(15);
-	int i, j, k = 0, card;
+	int i, k = 0, card;
 
 	std::cout << "This program prints randomized numbers ready to merge into bingo cards." << std::endl << std::endl;
 	std::cout << "Please enter number of cards needed (eg. '42'): ";
@@ -37,21 +37,18 @@ int main() {
 		std::iota(e.begin(), e.end(), 61);
 		std::shuffle(e.begin(), e.end(), std::mt19937_64{ std::random_device{}() });
 
-		for (i = 0; i <= 2; i++) {
-			if (i == 2 && c[2]) {
+		for (i = 0; i < 5; i++) {
+			if (i == 2) {
 				outFile << a[i] << ", " << b[i] << ", FREE SPACE, " << d[i] << ", " << e[i] << '\n';
 			}
 			else {
 				outFile << a[i] << ", " << b[i] << ", " << c[i] << ", " << d[i] << ", " << e[i] << '\n';
 			}
 		}
-		for (j = 3; j < 5; j++) {
-			outFile << a[j] << ", " << b[j] << ", " << c[j] << ", " << d[j] << ", " << e[j] << '\n';
-		}
 		k++;
 	}
-
-	std::cout << std::endl << "done." << std::endl;
+	
+	outFile.close();
 
 	return 0;
 }
