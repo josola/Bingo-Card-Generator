@@ -9,7 +9,7 @@
 int main() {
 
 	std::ofstream outFile;
-	outFile.open("bingo-numbers.csv");
+	outFile.open("bingo-cards.csv");
 
 	std::vector<int> a(15), b(15), c(15), d(15), e(15);
 	int i, k = 0, card;
