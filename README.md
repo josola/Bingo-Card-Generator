@@ -1,4 +1,4 @@
-<B>Bingo Number Generator</B><br>
+<B>Bingo Card Generator</B><br>
 Prints five columns and five rows of pseudo random numbers.
 
 Each column follows bingo rules:
