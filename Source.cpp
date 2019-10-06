@@ -8,18 +8,28 @@
 
 int main() {
 
+	//file creation
 	std::ofstream outFile;
 	outFile.open("bingo-cards.csv");
 
 	std::vector<int> a(15), b(15), c(15), d(15), e(15);
 	int i, k = 0, card;
 
+	//user prompt
 	std::cout << "This program prints randomized numbers ready to merge into bingo cards." << std::endl << std::endl;
 	std::cout << "Please enter number of cards needed (eg. '42'): ";
-	std::cin >> card;
+	
+	//error handling
+	while (!(std::cin >> card)) {
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cout << "Bad value! Please type an integer (eg. '42'): ";
+	}
 
+	//data merge headers added to CSV
 	outFile << "A" << ',' << "B" << ',' << "C" << ',' << "D" << ',' << "E" << std::endl;
 
+	//card generator
 	while (k < card) {
 
 		std::iota(a.begin(), a.end(), 1);
@@ -47,8 +57,7 @@ int main() {
 		}
 		k++;
 	}
-	
+	//file close
 	outFile.close();
-
 	return 0;
 }
