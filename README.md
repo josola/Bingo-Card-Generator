@@ -1,5 +1,5 @@
 <B>Bingo Card Generator</B><br>
-Prints five columns and five rows of pseudo random numbers.
+Prints five columns and five rows of pseudo random numbers to a CSV file for data merge.
 
 Each column follows bingo rules:
 
