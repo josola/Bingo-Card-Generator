@@ -12,3 +12,10 @@
 *.filters
 *.user
 *.sln
+.vscode/settings.json
+.vscode/tasks.json
+bin/.DS_Store
+bin/bingo-cards.csv
+bin/Bingo-Card-Generator
+bin/Bingo-Card-Generator.dSYM/Contents/Info.plist
+bin/Bingo-Card-Generator.dSYM/Contents/Resources/DWARF/Bingo-Card-Generator
