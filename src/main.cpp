@@ -12,7 +12,7 @@
 int main()
 {
 	std::ofstream outFile;
-	outFile.open("bingo-cards.csv");
+	outFile.open("./output/bingo-cards.csv");
 
 	std::vector<int> a(15), b(15), c(15), d(15), e(15);
 	int k = 0, card;
