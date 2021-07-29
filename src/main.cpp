@@ -1,7 +1,7 @@
-/*
- * Generate correct numbers for bingo cards and output to CSV file.
- * Jordan Sola 2019-2020 - MIT License
- */
+/* src/main.cpp
+ * Generates prepress ready bingo card files.
+ * (c) Jordan Sola 2020 - 2021
+ * Written by Jordan Sola 2020 - 2021 */
 
 #include <iostream>
 #include <random>
@@ -9,42 +9,36 @@
 #include <numeric>
 #include <fstream>
 
-using std::ofstream;
-using std::vector;
-using std::cout;
-using std::cin;
-using std::numeric_limits;
-using std::streamsize;
-using std::random_device;
-using std::mt19937;
-using std::iota;
-using std::shuffle;
-
 int main()
 {
-	ofstream outFile;
+	std::ofstream outFile;
 	outFile.open("bingo-cards.csv");
 
-	vector<int> a(15), b(15), c(15), d(15), e(15);
+	std::vector<int> a(15), b(15), c(15), d(15), e(15);
 	int k = 0, card;
 
-	cout << "This program prints randomized numbers ready to merge into bingo cards.\n"
-		 << '\n';
-	cout << "Please enter number of cards needed (eg. '42'): ";
+	std::cout << "This program prints randomized numbers ready to merge into bingo cards.";
 
-	while (!(cin >> card))
+	for (int i = 0; i < 2; i++)
 	{
-		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-		cout << "Bad value! Please type an integer (eg. '42'): ";
+		std::cout << std::endl;
 	}
 
-	outFile << "A" << ',' << "B" << ',' << "C" << ',' << "D" << ',' << "E" << '\n';
+	std::cout << "Please enter number of cards needed (eg. '42'): ";
+
+	while (!(std::cin >> card))
+	{
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cout << "Bad value! Please type an integer (eg. '42'): ";
+	}
+
+	outFile << "A" << ',' << "B" << ',' << "C" << ',' << "D" << ',' << "E" << std::endl;
 
 	while (k < card)
 	{
-		random_device rd;
-		mt19937 gen(rd());
+		std::random_device rd;
+		std::mt19937 gen(rd());
 
 		iota(a.begin(), a.end(), 1);
 		shuffle(a.begin(), a.end(), gen);
