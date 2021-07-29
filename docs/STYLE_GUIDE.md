@@ -1,4 +1,4 @@
-# Style Guide
+# Style Guide 🧶
 
 - ### Banners should be formmated as follows:
 
