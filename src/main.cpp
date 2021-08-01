@@ -61,11 +61,11 @@ int main()
 		{
 			if (i == 2)
 			{
-				outFile << a[i] << ", " << b[i] << ", FREE SPACE, " << d[i] << ", " << e[i] << '\n';
+				outFile << a[i] << ", " << b[i] << ", FREE SPACE, " << d[i] << ", " << e[i] << std::endl;
 			}
 			else
 			{
-				outFile << a[i] << ", " << b[i] << ", " << c[i] << ", " << d[i] << ", " << e[i] << '\n';
+				outFile << a[i] << ", " << b[i] << ", " << c[i] << ", " << d[i] << ", " << e[i] << std::endl;
 			}
 		}
 		k++;
