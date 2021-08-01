@@ -1,5 +1,25 @@
 # Style Guide 🧶
 
+### Project structure should be as follows:
+
+```
+project
+|   .gitignore
+|   LICENSE
+|   README.md
+|   
+└───bin
+|   |   executables
+|
+└───docs
+|   |   documentation
+|
+└───src
+    |   source_files
+```
+
+### The main point of entry source file should be named ```main```, regardless of file type.
+
 ### Banners should be formmated as follows:
 
 ```c++
@@ -9,7 +29,7 @@
  * author */
 ```
 
-### User include directives should be included before library directives.
+### User ```include``` directives should be placed before library directives.
 
 ```c++
 #include "user_file.h"
@@ -39,7 +59,7 @@ using std::cout;
 ```c++
 int main()
 {
-    ...
+ ...
 }
 ```
 
@@ -48,7 +68,7 @@ int main()
 ```c++
 int main()
 {
-    ...
+ ...
 }
 ```
 
@@ -104,9 +124,17 @@ std::cout << "Hello World!" << std::endl;
 ```c++
 int main()
 {
-    ...
-    return 0;
+ ...
+ return 0;
 }
 ```
 
-### Do not include trailing new lines in source files.
+### Do not include trailing newlines in source files.
+
+### Project documentation filenames should ba all caps:
+
+```
+BUILD_GUIDE.md
+CONTRIBUTING.md
+README.md
+```
