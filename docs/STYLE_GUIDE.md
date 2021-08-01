@@ -1,6 +1,6 @@
 # Style Guide 🧶
 
-- ### Banners should be formmated as follows:
+### Banners should be formmated as follows:
 
 ```c++
 /* file_directory/file_name.extension
@@ -9,22 +9,14 @@
  * author */
 ```
 
-- ### User include directives should be included before library directives.
+### User include directives should be included before library directives.
 
 ```c++
 #include "user_file.h"
 #include <library>
 ```
 
-- ### ``using namespace`` should not be included in source files.
-
-Wrong:
-
-```c++
-#include <iostream>
-
-using std::cout;
-```
+### ``using namespace`` should not be included in source files.
 
 Wrong:
 
@@ -34,9 +26,15 @@ Wrong:
 using namespace std;
 ```
 
-- ### The ``main()`` function should have a return type.
+Wrong:
 
-- ### Curly braces should be placed on newlines.
+```c++
+#include <iostream>
+
+using std::cout;
+```
+
+### The ``main()`` function should have a return type.
 
 ```c++
 int main()
@@ -45,7 +43,16 @@ int main()
 }
 ```
 
-- ### Definitions should occur at declarations.
+### Curly braces should be placed on newlines.
+
+```c++
+int main()
+{
+    ...
+}
+```
+
+### Definitions should occur at declarations when possible.
 
 ```c++
 int num = 12;
@@ -66,7 +73,7 @@ Wrong:
 int const limit = 12;
 ```
 
-- ### Spaces should be included in expressions.
+### Spaces should be included in expressions.
 
 Right:
 
@@ -86,8 +93,20 @@ while(limit!=12)
 }
 ```
 
-- ### New lines to the output stream should use ``std::endl;``.
+### New lines to the output stream should use ``std::endl;``.
 
-- ### The ``main()`` function should return 0 at the end of execution.
+```c++
+std::cout << "Hello World!" << std::endl;
+```
 
-- ### Do not include trailing new lines in source files.
+### The ``main()`` function should return 0 at the end of execution.
+
+```c++
+int main()
+{
+    ...
+    return 0;
+}
+```
+
+### Do not include trailing new lines in source files.
