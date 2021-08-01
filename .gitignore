@@ -34,4 +34,6 @@
 # Directories
 /bin
 /.vscode
-docs/.DS_Store
+
+# Residual
+*.DS_Store
