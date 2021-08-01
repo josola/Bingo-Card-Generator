@@ -1,6 +1,6 @@
 # Bingo Card Generator 🔮
 
-Prints five columns and five rows of pseudo random numbers to a CSV file for data merge.
+Prints five columns and five rows of pseudo-random numbers to a CSV file for data merge.
 
 Each column follows bingo rules:
 
@@ -10,8 +10,8 @@ Each column follows bingo rules:
 **"G" (numbers 46–60)<br>**
 **"O" (numbers 61–75)**
 
-There is a “FREE SPACE” located in column “N”, position three. Output is a data merge ready CSV file. Number of cards generated is controlled through prompt. Command line only, no GUI. A sample file named "sample.csv" has been included in ``output/`` to see what a potential final result will be.
+There is a “FREE SPACE” located in column “N”, position three. Output is a data merge-ready CSV file. The number of cards generated is controlled through prompt. Command-line only, no GUI. A sample file named "sample.csv" has been included in ``output/`` to see what a potential final result will be.
 
 - This repository has a [Style Guide](https://github.com/josola/bingo_card/blob/main/docs/STYLE_GUIDE.md)! Be sure to check it out before making contributions.
 - Speaking of contributions, this repository has a [Contributing Guide](https://github.com/josola/bingo_card/blob/main/docs/CONTRIBUTING.md) as well!
-- Although this project is very straightfoward, there is a [Build Guide](https://github.com/josola/bingo_card/blob/main/docs/BUILD_GUIDE.md)!
+- Although this project is very straightforward, there is a [Build Guide](https://github.com/josola/bingo_card/blob/main/docs/BUILD_GUIDE.md)!
