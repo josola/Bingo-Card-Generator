@@ -4,18 +4,18 @@
 
 ```
 project
-|   .gitignore
-|   LICENSE
-|   README.md
-|   
+| .gitignore
+| LICENSE
+| README.md
+| 
 └───bin
-|   |   executables
+| | executables
 |
 └───docs
-|   |   documentation
+| | documentation
 |
 └───src
-    |   source_files
+ | source_files
 ```
 
 ### The main point of entry source file should be named ```main```, regardless of file type.
@@ -131,7 +131,7 @@ int main()
 
 ### Do not include trailing newlines in source files.
 
-### Project documentation filenames should ba all caps:
+### Project documentation filenames should be all caps:
 
 ```
 BUILD_GUIDE.md
