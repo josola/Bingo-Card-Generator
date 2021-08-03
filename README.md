@@ -1,5 +1,9 @@
 # Bingo Card Generator 🔮
 
+![Issues](https://img.shields.io/github/issues/josola/bingo_card_maker?style=for-the-badge)
+![License](https://img.shields.io/github/license/josola/bingo_card_maker?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/josola/bingo_card_maker?style=for-the-badge)
+
 Prints five columns and five rows of pseudo-random numbers to a CSV file for data merge.
 
 Each column follows bingo rules:
